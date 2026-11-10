@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome Dino Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="score-board">
+      <span id="score">00000</span>
+      <span id="high-score">HI 00000</span>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="250"></canvas>
+
+    <div id="game-over-screen" class="hidden">
+      <h2>GAME OVER</h2>
+      <p>Press Space or Tap to Restart</p>
+    </div>
+
+    <div class="instructions">
+      <p>Press <strong>Space</strong> or <strong>Up Arrow</strong> (or tap screen) to Jump</p>
+      <p>Press <strong>Down Arrow</strong> to Duck</p>
+      <button id="soundToggle" class="sound-btn">Sound: ON 🔊</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
